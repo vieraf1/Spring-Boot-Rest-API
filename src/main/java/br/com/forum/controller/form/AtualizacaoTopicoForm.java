@@ -33,7 +33,7 @@ public class AtualizacaoTopicoForm {
 	}
 
 	public Topico atualizar(Long id, TopicoRepository topicoRepository) {
-		Topico topico = topicoRepository.getReferenceById(id);
+		Topico topico = topicoRepository.getById(id);
 		
 		topico.setTitulo(this.titulo);
 		topico.setMensagem(this.mensagem);
