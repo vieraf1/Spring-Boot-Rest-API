@@ -20,7 +20,7 @@ import br.com.forum.repository.UsuarioRepository;
 @SuppressWarnings("deprecation")
 @EnableWebSecurity
 @Configuration
-@Profile("prod")
+@Profile(value = {"prod", "test"})
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
