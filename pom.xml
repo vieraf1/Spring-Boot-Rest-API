@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>forum</name>
 	<description>Projeto sobre um Forum</description>
+	<packaging>war</packaging>
 	
 	<properties>
 		<java.version>11</java.version>
@@ -88,6 +89,12 @@
 		  <groupId>junit</groupId>
 		  <artifactId>junit</artifactId>
 		  <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-tomcat</artifactId>
+		  <scope>provided</scope>
 		</dependency>
 	</dependencies>
 
