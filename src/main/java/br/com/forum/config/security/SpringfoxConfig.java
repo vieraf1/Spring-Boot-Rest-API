@@ -1,24 +1,26 @@
 package br.com.forum.config.security;
 
+import static java.util.stream.Collectors.toList;
+import static springfox.documentation.spi.service.contexts.Orderings.byPatternsCondition;
+import static springfox.documentation.spring.web.paths.Paths.ROOT;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+
+import javax.servlet.ServletContext;
+
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping;
+
 import springfox.documentation.spi.service.RequestHandlerProvider;
 import springfox.documentation.spring.web.WebMvcRequestHandler;
 import springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper;
 import springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider;
 import springfox.documentation.spring.web.readers.operation.HandlerMethodResolver;
-
-import javax.servlet.ServletContext;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
-
-import static java.util.stream.Collectors.toList;
-import static springfox.documentation.spi.service.contexts.Orderings.byPatternsCondition;
-import static springfox.documentation.spring.web.paths.Paths.ROOT;
 
 
 @Configuration
